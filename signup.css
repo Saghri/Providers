@@ -1,0 +1,73 @@
+body{
+    background-color: #f7f3f3;
+}
+.logo{
+    width: 200px;
+    margin: 5px auto;
+}
+.heading{
+    text-align: center;
+}
+.signup{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    height: 500px;
+    width: 400px;
+    background-color: rgb(211 208 215);
+    margin: 0px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#name{
+    width: 210px;
+    height: 19px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+#email{
+    width: 210px;
+    height: 19px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+#password{
+    width: 210px;
+    height: 19px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+#confirm_password{
+    width: 210px;
+    height: 19px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#create{
+    width: 180px;
+    height: 43px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 87, 128);
+}
+#create:hover{
+    background-color: rgb(16, 127, 179);
+    cursor: pointer;
+}
+.note a{
+    text-decoration: none;
+}
+.register a{
+    text-decoration: none;
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providers Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Homepage.css">
+
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    
+     <!-- Header -->
+     <div class="header">
+        <ul>
+            <li><a href="Seller_login.html" target="_blank">Be a Supplier</a></li>
+            |
+            <li><a href="#">About Us</a></li>
+            |
+            <li><a href="#">Help Center</a></li>
+            <!-- |
+            <li><a href="#">Manage Account</a></li> -->
+        </ul>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+        <div class="container-fluid">
+            <nav class="navbar bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="Images/providers.png" alt="Providers" width="170" height="70">
+                    </a>
+                </div>
+            </nav>
+            <span id="slogan">Your Needs <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our Priority!</span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <form class="d-flex" id="search" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search Your Products" aria-label="Search">
+                        <button class="btn btn-outline-success" id="sicon" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item dropdown" id="region">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="Images/location.png" alt="" height="20px">
+                            Country/Region
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="countrydrop" style="font-size: 16px;"><strong>Ship to:</strong></li>
+                            <li>
+                                <select class="countrydrop" name="Country" id="country">
+                                    <option value="Australia">Australia</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="India">India</option>
+                                    <option value="Pakistan" selected>Pakistan</option>
+                                    <option value="Russia">Russia</option>
+                                </select>
+                            </li>
+                        
+                            <li class="countrydrop" style="font-size: 16px;"><strong>Currency:</strong></li>
+                            <li>
+                                <select class="countrydrop" name="Currency" id="currency">
+                                    <option value="AUD">AUD ( Australian Dollar )</option>
+                                    <option value="CAD">CAD ( Canadian Dollar )</option>
+                                    <option value="INR">INR ( Indian Rupee )</option>
+                                    <option value="PKR" selected>PKR ( Pakistani Rupee )</option>
+                                    <option value="RUB">RUB ( Russian Ruble )</option>
+                                </select>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="countrydrop"><Button>Save</Button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item_login">
+                        <a class="nav-link active" id="login" aria-current="page" href="Login.html" target="_blank">Sign in</a>
+                    </li>
+                    <li class="nav-item_trial">
+                        <a class="nav-link " id="cart" aria-current="page" href="#">
+                        My Cart <img src="Images/cart.png" alt="cart" height="25px">      
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Product Links -->
+    <div class="links_container" id="link_cont">
+        <a href="" id="arrivals">
+            New Arrivals
+        </a>
+        <a href="">
+            Top Sellers
+        </a>
+        <a href="">
+            High Profit
+
+        </a>
+        <a href="">
+            Clearance
+        </a>
+        <a href="">
+           Popular Brands
+
+        </a>
+        <a href="">
+            All Products
+        </a>
+        <a href=""></a>
+    </div>
+
+    <!-- Carousel -->
+
+    <div class="container2">
+        <div class="categories">
+            <a href="" id="category"><h6>CATEGORIES</h6></a>
+            <ul>
+                <li><a href="">Home,Garden & Tools </a></li>
+                <li><a href="">Outdoor  </a></li>
+                <li><a href="">Sports   </a></li>
+                <li><a href="">Pets </a></li>
+                <li><a href="">Beauty & Health </a></li>
+                <li><a href="">Electronics </a></li>
+                <li><a href="">Computers, Office Supplies </a></li>
+                <li><a href="">Clothing, Shoes & Jewelry</a></li>
+                <li><a href="">Toys, Kids & Baby </a></li>
+            </ul>
+        </div>
+        
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://www.godropship.co.uk/uploadfile/images/598808/2022-11/2022-11-25CR-wxtq9axf3e.jpg" class="d-block" alt="image1" height="400px" width="1154px">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://www.godropship.co.uk/uploadfile/images/598808/2022-10/2022-10-13CR-0k6nx3wurb.jpg" class="d-block" alt="image2" height="400px" width="1154px">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://www.godropship.co.uk/uploadfile/images/619671/2021-06/2021-06-18CR-fbtk8rpe7p.jpg" class="d-block" alt="image3" height="400px" width="1154px">
+                <div class="carousel-caption d-none d-md-block">
+                </div>  
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.godropship.co.uk/uploadfile/images/598808/2022-10/2022-10-14CR-xcsfxyiq9h.jpg" class="d-block" alt="image4" height="400px" width="1154px">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!-- Hot Deals -->
+    <div class="hot_container">
+        <h3 class="hot"><a href="">Hot Deals</a></h3>
+        <span id="view1"><a href="#">View more...</a></span>
+        <div class="Hot_deals">
+            <div id="HD1" class="card" style="width: 273px;">
+                <img src="Hot_deals/Hd1.jpg" class="card-img-top" alt="image1">
+                <div class="card-body">
+                  <p class="card-text">Stuffed Santa Gift</p>
+                  <p class="sales1">UpTo 50% off</p>
+                  <p class="price1">PKR 999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="HD2" class="card" style="width: 273px;">
+                <img src="Hot_deals/hd2.png" class="card-img-top" alt="image2" height="280px">
+                <div class="card-body">
+                  <p class="card-text">Steal Deal: Pack of 4 Signature Perfumes at the price of 3</p>
+                  <p class="sales1">UpTo 20% off</p>
+                  <p class="price1">PKR 3,999;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="HD3" class="card" style="width: 273px;">
+                <img src="Hot_deals/hd3.jpg" class="card-img-top" alt="image3">
+                <div class="card-body">
+                  <p class="card-text">3D Wooden Puzzel</p>
+                  <p class="sales1">UpTo 73% off</p>
+                  <p class="price1">PKR 1,499 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="HD4" class="card" style="width: 273px;">
+                <img src="Hot_deals/hd4.png" class="card-img-top" alt="image4">
+                <div class="card-body">
+                  <p class="card-text">Bulova Watches</p>
+                  <p class="sales1">UpTo 23% off</p>
+                  <p class="price1">PKR 4,999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="HD5" class="card" style="width: 273px;">
+                <img src="Hot_deals/hd5.jpg" class="card-img-top" alt="image5">
+                <div class="card-body">
+                  <p class="card-text">Mens Socks</p>
+                  <p class="sales1">UpTo 40% off</p>
+                  <p class="price1">PKR 499  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Top Sellers -->
+    <div class="Top_container">
+        <h3 class="top"><a href="">Top Sellers</a></h3>
+        <span id="view2"><a href="#">View more...</a></span>
+        <div class="Top_sellers">
+            <div id="TS1" class="seller_card card" style="width: 273px;">
+                <img src="Top_sellers/burbery.jpg" class="card-img-top" alt="image1">
+                <div class="card-body">
+                  <p class="card-text">Burberry London For Men 100ml</p>
+                  <p class="price1">PKR 9,790 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="TS2" class="seller_card card" style="width: 273px;">
+                <img src="Top_sellers/TS2.jpg" class="card-img-top" alt="image2" height="280px">
+                <div class="card-body">
+                  <p class="card-text">4-Probe Premium Smart Meat Thermometer</p>
+                  <p class="price1">PKR 6,499 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="TS3" class="seller_card card" style="width: 273px;">
+                <img src="Top_sellers/TS3.png" class="card-img-top" alt="image3">
+                <div class="card-body">
+                  <p class="card-text">Rice Cooker</p>
+                  <p class="price1">PKR 11,199 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="TS4" class="seller_card card" style="width: 273px;">
+                <img src="Top_sellers/TS4.jpg" class="card-img-top" alt="image4">
+                <div class="card-body">
+                  <p class="card-text">Dumpling Maker</p>
+                  <p class="price1">PKR 3,599 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="TS5" class="seller_card card" style="width: 273px;">
+                <img src="Top_sellers/TS5.jpg" class="card-img-top" alt="image5">
+                <div class="card-body">
+                  <p class="card-text">Men's Tactical Belt with Metal Buckle</p>
+                  <p class="price1">PKR 3,323  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- Featured Categories -->
+    <div class="Featured">
+        <h3 class="F_Cat"><a href="">Featured Categories</a></h3>
+        <div class="T_category">
+            <div class="sale_box" id="sale1">
+                <a href="#"><h5><span class="share"></span>&nbsp; Technology</h5></a>
+                <div class="images" id="img1">
+                    <a href="#"><img src="Top_category/T1.jpg" alt="Technology1"></a>
+                    <a href="#"><img src="Top_category/T2.jpg" alt="Technology2"></a>
+                    <a href="#"><img src="Top_category/T3.jpg" alt="Technology3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale2">
+                <a href="#"><h5>&nbsp; Sport </h5></a>
+                <div class="images" id="img2">
+                    <a href="#"><img src="Top_category/S1.png" alt="Sport1"></a>
+                    <a href="#"><img src="Top_category/S2.jpg" alt="Sport2"></a>
+                    <a href="#"><img src="Top_category/S3.jpg" alt="Sport3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale3">
+                <a href="#"><h5>&nbsp; Pet </h5></a>
+                <div class="images" id="img3">
+                    <a href="#"><img src="Top_category/P1.jpg" alt="Pet1"></a>
+                    <a href="#"><img src="Top_category/P2.jpg" alt="Pet2"></a>
+                    <a href="#"><img src="Top_category/P3.jpg" alt="Pet3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale4">
+                <a href="#"><h5>&nbsp; Beauty </h5></a>
+                <div class="images" id="img3">
+                    <a href="#"><img src="Top_category/B1.jpg" alt="Beauty1"></a>
+                    <a href="#"><img src="Top_category/B2.jpg" alt="Beauty2"></a>
+                    <a href="#"><img src="Top_category/B3.jpg" alt="Beauty3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale5">
+                <a href="#"><h5><span class="share"></span>&nbsp; Fashion</h5></a>
+                <div class="images" id="img1">
+                    <a href="#"><img src="Top_category/F1.jpg" alt="Fashion1"></a>
+                    <a href="#"><img src="Top_category/F2.jpg" alt="Fashion2"></a>
+                    <a href="#"><img src="Top_category/F3.png" alt="Fashion3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale6">
+                <a href="#"><h5>&nbsp; Home </h5></a>
+                <div class="images" id="img2">
+                    <a href="#"><img src="Top_category/H1.jpg" alt="Home1"></a>
+                    <a href="#"><img src="Top_category/H2.jpg" alt="Home2"></a>
+                    <a href="#"><img src="Top_category/H3.jpg" alt="Home3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale7">
+                <a href="#"><h5>&nbsp; Office </h5></a>
+                <div class="images" id="img3">
+                    <a href="#"><img src="Top_category/Of1.jpg" alt="Office1"></a>
+                    <a href="#"><img src="Top_category/Of2.jpg" alt="Office2"></a>
+                    <a href="#"><img src="Top_category/Of3.jpg" alt="Office3"></a>
+                </div>
+            </div>
+            <div class="sale_box" id="sale8">
+                <a href="#"><h5>&nbsp; Outdoor </h5></a>
+                <div class="images" id="img3">
+                    <a href="#"><img src="Top_category/O1.jpg" alt="Outdoor1"></a>
+                    <a href="#"><img src="Top_category/O2.jpg" alt="Outdoor2"></a>
+                    <a href="#"><img src="Top_category/O3.jpg" alt="Outdoor3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selected For You -->
+    <div class="Selected_container">
+        <h3 class="selected"><a href="">Selected For You</a></h3>
+        <span id="view3"><a href="#">View more...</a></span>
+        <div class="selected_pro">
+            <div id="SP1" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP1.jpg" class="card-img-top" alt="image1">
+                <div class="card-body">
+                  <p class="card-text">Printed Zipper Jacket</p>
+                  <p class="price2">PKR 891 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP2" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP2.jpg" class="card-img-top" alt="image2" height="280px">
+                <div class="card-body">
+                  <p class="card-text">Asian Men's Wonder-13 Sports Running Shoes</p>
+                  <p class="price2">PKR 899 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP3" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP3.png" class="card-img-top" alt="image3">
+                <div class="card-body">
+                  <p class="card-text">Lenovo Legion 7 (16" AMD)</p>
+                  <p class="price2">PKR 149,999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP4" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP4.jpg" class="card-img-top" alt="image4">
+                <div class="card-body">
+                  <p class="card-text">Vegetable Wash 3-pack</p>
+                  <p class="price2">PKR 9,505 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP5" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP5.jpg" class="card-img-top" alt="image5">
+                <div class="card-body">
+                  <p class="card-text">MUJI x Honda MS01 e-bike</p>
+                  <p class="price2">PKR 220,000  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP6" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP7.jpg" class="card-img-top" alt="image7">
+                <div class="card-body">
+                  <p class="card-text">BMX Children Bicycle Alloy Frame Disc Brakes</p>
+                  <p class="price2">PKR 20,499 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP7" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP7.jpg" class="card-img-top" alt="image7" height="280px">
+                <div class="card-body">
+                  <p class="card-text">Adapter USB Universal Travel Adapter for iPhone Ipad Android</p>
+                  <p class="price2">PKR 806 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP8" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP8.jpg" class="card-img-top" alt="image8">
+                <div class="card-body">
+                  <p class="card-text">JBL C115 Wireless Ear Earbuds</p>
+                  <p class="price2">PKR 3,799 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP9" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP9.jpg" class="card-img-top" alt="image9">
+                <div class="card-body">
+                  <p class="card-text">Joyroom Star Series 2xUSB & 1xUSB-C 22.5W Power Bank</p>
+                  <p class="price2">PKR 2,900 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP10" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP10.png" class="card-img-top" alt="image10">
+                <div class="card-body">
+                  <p class="card-text">Cubic Zirconia Necklace Set- DR-427/DS</p>
+                  <p class="price2">PKR 45,096  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP11" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP11.jpg" class="card-img-top" alt="image11">
+                <div class="card-body">
+                  <p class="card-text">Beauty Egg Sponge Maquiagem Foundation Powder Puff</p>
+                  <p class="price2">PKR 199 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP12" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP12.jpg" class="card-img-top" alt="image12" height="280px">
+                <div class="card-body">
+                  <p class="card-text">ETLUK Electric Gel Gun M1911 Splatter Ball Gun</p>
+                  <p class="price2">PKR 9,468 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP13" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP13.jpeg" class="card-img-top" alt="image13">
+                <div class="card-body">
+                  <p class="card-text">Rong Yun Women's Fashion Casual Solid Color Lapel </p>
+                  <p class="price2">PKR 11,199 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP14" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP14.jpg" class="card-img-top" alt="image14">
+                <div class="card-body">
+                  <p class="card-text">ROYAL REVOLUTION by Katy Perry 3.4 OZ</p>
+                  <p class="price2">PKR 6,749 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP15" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP15.png" class="card-img-top" alt="image15">
+                <div class="card-body">
+                  <p class="card-text">Genuine Leather Shoes Men Loafers Black Brown Slip</p>
+                  <p class="price2">PKR 4,499  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP16" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP16.jpg" class="card-img-top" alt="image16">
+                <div class="card-body">
+                  <p class="card-text">Shark Hairpin Headgear Imitation Wood Series</p>
+                  <p class="price2">PKR 430 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP17" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP17.jpg" class="card-img-top" alt="image17" height="280px">
+                <div class="card-body">
+                  <p class="card-text">Dryking Airvio Air Purifier</p>
+                  <p class="price2">PKR 45,999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP18" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP18.jpg" class="card-img-top" alt="image18">
+                <div class="card-body">
+                  <p class="card-text">Aurora Light; Wake Up Light Sunrise Alarm Clock for Kids</p>
+                  <p class="price2">PKR 14,649 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP19" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP19.jpg" class="card-img-top" alt="image19">
+                <div class="card-body">
+                  <p class="card-text">Twin Bunk Bed with Built-in Storage Wardrobe and Trundle</p>
+                  <p class="price2">PKR 179,000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+            <div id="SP20" class="selected_card card" style="width: 273px;">
+                <img src="Selected_Pro/SP20.jpg" class="card-img-top" alt="image20">
+                <div class="card-body">
+                  <p class="card-text">Women's Christmas Turtleneck Long Sleeve Sweater</p>
+                  <p class="price2">PKR 8,799  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add to Cart</a></p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="see">
+        <button><a href="">See All Products --></a></button>
+    </div>
+
+    <!-- Social Contact -->
+    <div class="social">
+        
+        <div class="app_container">
+            <h1 class="provider"><em>Providers</em></h1>
+            <h5 class="we"><em>We Provide What You Need!</em> </h5>   
+            <p class="dec">Looking for something? Providers will help you find your product. <br> We establish bridge between buyers and sellers enabling them <br> to excel alongside.  </p>      
+                <ul class="social_apps">
+                    <li class="twitter"> <a href="https://twitter.com/" target="_blank"><img src="Social_media/twitter.png" alt="" id="twitter"></a>
+                    </li>
+                    <li class="youtube"> <a href="https://www.youtube.com/" target="_blank"><img src="Social_media/youtube.png" alt="" id="youtube"></a>
+                    </li>
+                    <li class="facebook"> <a href="https://wwww.facebook.com" target="_blank"><img src="Social_media/facebook.png" alt="" id="facebook"></a>
+                    </li>
+                    <li class="instagram"> <a href="https://www.instagram.com/" target="_blank"><img src="Social_media/instagram.png" alt="" id="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        <div class="know">
+            <h6>Get To Know US</h6>
+            <ul>
+                <li><a href="#">About Providers</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="Business">
+            <h6>Start Business With Us</h6>
+            <ul>
+                <li><a href="#">Your Business</a></li>
+                <li><a href="#">Your Products</a></li>
+                <li><a href="#">FAQ's About Business</a></li>
+            </ul>
+        </div>
+        <div class="Help">
+            <h6>Need Help?</h6>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns & Replacement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="back-to-top-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 11l5-5m0 0l5 5m-5-5v12"
+          />
+        </svg>
+      </button>
+
+    <script>
+        const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top")
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
+  } else {
+    backToTopButton.classList.add("hidden")
+  }
+})
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+backToTopButton.addEventListener("click", goToTop)
+    </script>
+</body>
+</html>

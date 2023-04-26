@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providers Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+
+    <script>
+        function show_password() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="Images/providers.png" alt="" height="100px">
+    </div>
+    <div class="login">
+        <h1 class="heading">Shop With Us</h1>
+        <form action="#" method="post">
+            <input type="email" name="Email" id="email" placeholder="Email" style="font-family: 'Crimson Text', serif;" required>
+            <br><br>
+            
+            <input type="password" name="password" id="password" placeholder="Password" style="font-family: 'Crimson Text', serif;" required>
+
+            <br>
+            <label for="pswrd" id="show">Show Password</label>  
+            <input type="checkbox" name="pass" id="pswrd" onclick="show_password()">
+            <br>
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            
+
+            <input type="submit" value="Login" id="login" style="font-family: 'Crimson Text', serif;">
+            <p class="note">By loging in, you agree to Provider's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <hr>
+            <p class="register">Don't have an account? <br> No worries register now as a <a href="SignUp.html">Buyer</a> or start your own business as a <a href="Seller_signup.html">Seller</a>.</p>
+        </form>
+    </div>
+        
+
+</body>
+</html>

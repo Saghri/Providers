@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providers Signup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+
+    <div class="logo">
+        <img src="Images/providers.png" alt="" height="100px">
+    </div>
+    <div class="signup">
+        <h1 class="heading">Let's Start Shopping</h1>
+        <form action="#" method="post">
+            <input type="text" name="user_name" id="name" placeholder="First & Last Name" style="font-family: 'Crimson Text', serif;" maxlength="20" required>
+            <br><br>
+            <input type="email" name="Email" id="email" placeholder="Email" style="font-family: 'Crimson Text', serif;" required>
+            <br><br>
+            
+            <input type="password" name="password" id="password" placeholder="Password" style="font-family: 'Crimson Text', serif;" 
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+            title="Must contain at least one digit and one UPPER and lower case letter, one special character and minimum 10 characters"
+            minlength="10" maxlength="30" required>
+            <br><br>
+            <input type="password" name="confirm" id="confirm_password" placeholder="Confirm Password" style="font-family: 'Crimson Text', serif;" required>
+            <br><br>
+            
+
+            <input type="submit" value="Create Account" id="create" style="font-family: 'Crimson Text', serif;">
+            <p class="note">By signing up, you agree to our <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+            <hr>
+            <p class="register">Already have an account? <a href="Login.html">Sign in</a></p>
+        </form>
+    </div>
+        
+
+</body>
+</html>
